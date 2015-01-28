@@ -138,7 +138,9 @@ border: none;
 	margin-top: 10px;
 }
 .camera_caption h2{
-	border-bottom:4px solid #4F511B;
+    color: black;
+	//border-bottom:4px solid #4F511B;
+    text-shadow: 0px 0px 5px rgba(67, 148, 175, 1);
 	font-family: 'Open Sans', sans-serif;
 	font-size:74px;
 	font-weight:700;
@@ -374,7 +376,7 @@ border: none;
 }
 
 
- .Des .fa-heart{
+ .Des .fa-wrench{
 	//margin-left: -14px;
 	background: url(../images/cir.png) no-repeat;
 	padding: 26px;
@@ -397,6 +399,9 @@ border: none;
 	font-size:20px;
 	font-weight:300;
 }
+.Fresh h1{
+	margin-bottom: 40px;
+}
 .Fresh p{
 	font-family: 'Roboto', 'sans-serif';
 	font-size: 13px;
@@ -404,7 +409,7 @@ border: none;
 	margin-top: 12px;
 	line-height: 23px;
 }
-.fa-cog {
+.fa-users {
 	margin-left: 2px;
 	background: url(../images/cir.png) no-repeat;
 	padding: 26px;
@@ -415,12 +420,24 @@ border: none;
 }
 .Des  h4{
 	//margin-left: -19px;
+    font-weight: 400;
+}
+.Des p{
+    font-weight: 400;
 }
 .Ver  h4{
 	//margin-left:0;
+    font-weight: 400;
+}
+.Ver p{
+    font-weight: 400;
 }
 .Fully  h4{
 	//margin-left: 20px;
+    font-weight: 400;
+}
+.Fully p{
+    font-weight: 400;
 }
 .fa-tablet{
 	//margin-left: 20px;
