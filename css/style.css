@@ -39,7 +39,8 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 	border-bottom: 150px solid white;
-	border-left: 3000px solid transparent;
+	border-left: 3000px solid rgba(255,0,0,0);
+    -moz-transform: scale(.99999);
 }
 /*.container{
 	outline:1px solid #fc0;
@@ -88,7 +89,7 @@ border: none;
 }
 #menu .active a:active {
 	outline: none;
-border: none;;
+border: none;
 }
 #menu .active a:link {
 	outline: none;
@@ -352,7 +353,8 @@ border: none;
 	-o-background-size: cover;
 	background-size: cover;
 	border-bottom: 150px solid white;
-	border-left: 3000px solid transparent;
+	border-left: 3000px solid rgba(255,0,0,0);
+    -moz-transform: scale(.99999);
 }
 .line2:before{
 	top: 0;
@@ -371,8 +373,8 @@ border: none;
 	background-size: cover;
 	/* height: 10px; */
 	border-top: 194px solid white;
-	border-right: 3000px solid transparent;
-	//bottom: 489px;
+	border-right: 3000px solid rgba(255,0,0,0);
+    -moz-transform: scale(.99999);
 }
 
 
@@ -720,7 +722,8 @@ border: none;
 	-o-background-size: cover;
 	background-size: cover;
 	border-bottom: 150px solid white;
-	border-left: 3000px solid transparent;
+	border-left: 3000px solid rgba(255,0,0,0);
+    -moz-transform: scale(.99999);
 }
 .line3:before{
 	top: 0;
@@ -739,8 +742,8 @@ border: none;
 	background-size: cover;
 	/* height: 10px; */
 	border-top: 194px solid white;
-	border-right: 3000px solid transparent;
-	//bottom: 489px;
+	border-right: 3000px solid rgba(255,0,0,0);
+    -moz-transform: scale(.99999);
 }
 .Ama{
 	margin-top: 201px;
@@ -1199,7 +1202,8 @@ border: none;
 	-o-background-size: cover;
 	background-size: cover;
 	border-bottom: 150px solid white;
-	border-left: 3000px solid transparent;
+	border-left: 3000px solid rgba(255,0,0,0);
+    -moz-transform: scale(.99999);
 }
 .line5:before{
 	top: 0;
@@ -1218,8 +1222,8 @@ border: none;
 	background-size: cover;
 	/* height: 10px; */
 	border-top: 194px solid white;
-	border-right: 3000px solid transparent;
-	//bottom: 489px;
+	border-right: 3000px solid rgba(255,0,0,0);
+    -moz-transform: scale(.99999);
 }
 /**/
 .forma{
@@ -1406,7 +1410,7 @@ textarea {
 }
 .line6 .Ama{
 	margin-top: 250px;
-	margin-bottom: 250px;;
+	margin-bottom: 250px;
 }
 .line6 .Ama h3{
 	font-size: 42px;
