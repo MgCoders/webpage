@@ -6,16 +6,16 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-	$to = 'youremail@domain.com';
-	$subject = 'ASUNTO: '.$subject;
-	$message = 'FROM: '.$name.' Email: '.$email.'Message: '.$message;
-	$headers = 'From: youremail@domain.com' . "\r\n";
+	$to = 'info@mgcoders.uy';
+	$subject = 'Mensaje a travez de MgCoders.uy: '.$subject;
+	$message = 'De: '.$name."\r\n".'Email: '.$email."\r\n".'Asunto: '.$subject."\r\n\r\n".$message;
+	$headers = 'From: sistemas@mgcoders.uy' . "\r\n";
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) { // this line checks that we have a valid email address
     mail($to, $subject, $message, $headers); //This method sends the mail.
-	echo "Your email was sent!"; // success message
+	echo "Mensaje enviado correctamente."; // success message
 }else{
-	echo "Invalid Email, please provide an correct email.";
+	echo "Mail inv&acute;lido.";
 }
 	
 
