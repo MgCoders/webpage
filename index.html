@@ -41,6 +41,27 @@
 				});
 			});
 		</script>
+      
+      <script>
+$(document).ready(function(){
+
+$('#submit').click(function(){
+
+$.post("send.php", $("#mycontactform").serialize(),  function(response) {   
+ $('#success').html(response);
+ //$('#success').hide('slow');
+});
+return false;
+
+
+});
+
+});
+          
+$('#configreset').click(function(){
+        $('#configform')[0].reset();
+  });
+</script>
 		
 	</head>
 	<body>
@@ -582,15 +603,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9 col-xs-12 forma">
-					<form>
-						<input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Nombre *'/>
-						<input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='Email *'/>
-						<input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Asunto'/>
-						<textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Mensaje *'></textarea>
-						<div class="cBtn col-xs-12">
+					<form action="" method="post" id="mycontactform">
+						<input type="text" class="col-md-6 col-xs-12 name" name='name' id='name' placeholder='Nombre *'/>
+						<input type="text" class="col-md-6 col-xs-12 Email" name='email' id='email' placeholder='Email *'/>
+						<input type="text" class="col-md-12 col-xs-12 Subject" name='subject' id='subject' placeholder='Asunto'/>
+						<textarea type="text" class="col-md-12 col-xs-12 Message" name='message' id='message' placeholder='Mensaje *'></textarea>
+						<div class="cBtn col-xs-2">
 							<ul>
-								<li class="clear"><a href="#"><i class="fa fa-times"></i>Limpiar campos</a></li>
-								<li class="send"><a href="#"><i class="fa fa-share"></i>Enviar mensaje</a></li>
+                                <input  type="button" value="Enviar" id="submit" /><div id="success" style="color:red;"></div>
+                                </ul>
+                        </div>
+                        <div class="cBtn col-xs-2">
+							<ul>
+                                <input type="reset" id="configreset" value="Limpiar"/>
+								<!--<a href="#"><i class="fa fa-times"></i>Limpiar campos</a>
+								<a href="#"><i class="fa fa-share"></i>Enviar mensaje</a>-->
 							</ul>
 						</div>
 					</form>
@@ -607,9 +634,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="line6" style="display:none">
+		<!--<div class="line6" style="display:none">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d48386.401887313725!2d-73.9407136!3d40.7147117!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1402409149092" width="100%" height="750" frameborder="0" style="border:0"></iframe>			
-		</div>
+		</div>-->
 		<div class="container" style="display:none">
 			<div class="row ftext">
 				<div class="col-md-12">

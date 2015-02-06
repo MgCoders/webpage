@@ -1,0 +1,6 @@
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+AuthType Basic
+AuthName "/"
+AuthUserFile "/home1/mgcoders/.htpasswds/public_html/passwd"
+require valid-user
