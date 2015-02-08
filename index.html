@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<script src='https://www.google.com/recaptcha/api.js'></script><!DOCTYPE html>
 <html lang="en">
   <head>
 		<title>Mg Coders</title>
@@ -23,9 +23,9 @@
 		<script type="text/javascript" src="js/myscript.js"></script>
 		<script src="js/sorting.js" type="text/javascript"></script>
 		<script src="js/jquery.isotope.js" type="text/javascript"></script>
-		<!--script type="text/javascript" src="js/jquery.nav.js"></script-->
+		<!--script type="text/javascript" src="js/jquery.nav.js"></script-->			
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 		
-
 		<script>
 			jQuery(function(){
 					jQuery('#camera_wrap_1').camera({
@@ -608,19 +608,29 @@ $('#configreset').click(function(){
 						<input type="text" class="col-md-6 col-xs-12 Email" name='email' id='email' placeholder='Email *'/>
 						<input type="text" class="col-md-12 col-xs-12 Subject" name='subject' id='subject' placeholder='Asunto'/>
 						<textarea type="text" class="col-md-12 col-xs-12 Message" name='message' id='message' placeholder='Mensaje *'></textarea>
-						<div class="cBtn col-xs-2"  style="width: 10%!important;">
+
+						<div class="cBtn col-xs-4" style="margin-right:20px">
 							<ul>
-                                <input  type="button" value="Enviar" id="submit"  style="width: 79px;"/>
+                               <div class="g-recaptcha" data-sitekey="6LcnqwETAAAAAEbRN5lBj9SNiE-nS4A8xpnMKkJ2"></div>
+							</ul>
+						</div>
+						
+						<div class="cBtn col-xs-2">
+							<ul>
+                                <input  type="button" value="Enviar" id="submit"  style="width: 140px; height:74px;"/>
                                 <div id="success" style="color:red;"></div>
                                 </ul>
                         </div>
+
                         <div class="cBtn col-xs-2">
 							<ul>
-                                <input type="reset" id="configreset" value="Limpiar"/Ver 108 nuevos Tweets>
+                                <input type="reset" id="configreset" value="Limpiar" style="width: 140px; height:74px;">
 								<!--<a href="#"><i class="fa fa-times"></i>Limpiar campos</a>
 								<a href="#"><i class="fa fa-share"></i>Enviar mensaje</a>-->
 							</ul>
 						</div>
+
+
 					</form>
 				</div>
 				<div class="col-md-3 col-xs-12 cont">
