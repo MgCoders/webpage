@@ -1,6 +1,15 @@
-# Use PHP5.4 as default
-AddHandler application/x-httpd-php54 .php
-AuthType Basic
-AuthName "/"
-AuthUserFile "/home1/mgcoders/.htpasswds/public_html/passwd"
-require valid-user
+## Use PHP5.4 as default
+#AddHandler application/x-httpd-php54 .php
+#AuthType Basic
+#AuthName "/"
+#AuthUserFile "/home1/mgcoders/.htpasswds/public_html/passwd"
+#require valid-user
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mgocders.com [OR]
+RewriteCond %{HTTP_HOST} ^mgocders.com.uy [OR]
+RewriteCond %{HTTP_HOST} ^mgcoders.uy
+RewriteRule ^(.*)$ http://www.mgcoders.uy/$1 [R=permanent,L]
