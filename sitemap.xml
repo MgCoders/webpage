@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>http://mgcoders.com/</loc>
+	<lastmod>2016-11-02</lastmod>
+	<changefrec>monthly</changefrec>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://mgcoders.com/#home</loc>
+	<lastmod>2016-11-02</lastmod>
+	<changefrec>monthly</changefrec>
+</url>
+<url>
+	<loc>http://mgcoders.com/#about</loc>
+	<lastmod>2016-11-02</lastmod>
+	<changefrec>monthly</changefrec>
+</url>
+<url>
+	<loc>http://mgcoders.com/#contact</loc>
+	<lastmod>2016-11-02</lastmod>
+	<changefrec>monthly</changefrec>
+</url>
+</urlset>
